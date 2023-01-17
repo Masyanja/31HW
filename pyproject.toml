@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "27hw"
+version = "0.1.0"
+description = ""
+authors = ["Masyanja <masyanja@hotmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django-admin = "^2.0.1"
+django = "^4.1.5"
+psycopg2 = "^2.9.5"
+djangorestframework = "^3.14.0"
+djangorestframework-simplejwt = "^5.2.2"
+psycopg2-binary = "^2.9.5"
+pillow = "^9.4.0"
+pytest-django = "^4.5.2"
+pytest-factoryboy = "^2.5.1"
+factory-boy = "^3.2.1"
+pytest = "^7.2.1"
+django-configurations = "^2.4"
+pytest-env = "^0.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "project.settings"
+filterwarnings = [
+    "ignore::UserWarning",
+]
