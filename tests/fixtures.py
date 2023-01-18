@@ -4,8 +4,8 @@ import pytest
 @pytest.fixture
 @pytest.mark.django_db
 def user_token(client, django_user_model):
-    username = "hr"
-    password = "123qwe"
+    username = "user"
+    password = "password"
 
     django_user_model.objects.create_user(username=username, password=password)
 
